@@ -37,24 +37,24 @@ header h1 {
     margin-left: 10px; /* Add some spacing between icons */
 }
 
-.container {
+.desc {
     display: flex;
-    align-items: right;
     background-color: #ecf0f1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
-.container-content {
-    display: flex;
-    align-items: right;
+.desc-content {
+    margin-left: auto;
     gap: 20px;
 }
 
-.container-text {
+.desc-text {
     max-width: 600px;
+    justify-content: flex-start;
 }
 
 main {
@@ -84,17 +84,21 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin: 0 auto;
+    max-width: 50%; 
+    flex-direction: column;
 }
 
 .presentation-content {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-direction: column
 }
 
 .presentation-text {
-    max-width: 600px;
+    max-width: 100%; 
+    flex-direction: column;
 }
 
 .profile-image {
@@ -103,6 +107,7 @@ main {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
 }
 
 .projects {
@@ -157,7 +162,7 @@ main {
 }
 
 .album {
-    width: calc(33.333% - 20px); /* Adjust width for three columns with gaps */
+    width: calc(33.333% - 20px); 
     margin-bottom: 20px;
     text-align: center;
     transform: rotate(-2deg);
