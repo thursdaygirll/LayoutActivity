@@ -2,15 +2,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ecf0f1;
-    color: #2c3e50;
+    background-color: #F5F5F5; /* Whitesmoke */
+    color: #2C3E50; /* Midnight Blue */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background-color: #ceadca;
+    background-color: #4C5B5C; /* Outer Space */
     color: #fff;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ header h1 {
 
 .desc {
     display: flex;
-    background-color: #ecf0f1;
+    background-color: #ECF0F1; /* Porcelain */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@ header h1 {
 main {
     flex-grow: 1;
     padding: 20px;
-    background-color: #fff;
+    background-color: #FFFFFF; /* White */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
@@ -80,7 +80,7 @@ main {
 .presentation {
     display: flex;
     align-items: center;
-    background-color: #ecf0f1;
+    background-color: #ECF0F1; /* Porcelain */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -107,7 +107,6 @@ main {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
 }
 
 .projects {
@@ -122,7 +121,7 @@ main {
 }
 
 .project {
-    background-color: #f4f4f4;
+    background-color: #ECF0F1; /* Porcelain */
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -145,7 +144,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-    background-color: #D1DEF0;
+    background-color: #D1DEF0; /* Pattens Blue */
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -158,21 +157,20 @@ main {
     font-size: 22px;
     margin-bottom: 10px;
     width: 100%;
-
 }
+
 
 .album {
     width: calc(33.333% - 20px); 
     margin-bottom: 20px;
     text-align: center;
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
     padding: 10px;
-    
 }
 
 .album:nth-child(odd) {
@@ -180,9 +178,10 @@ main {
 }
 
 .album img {
-    width: 300px;
+    width: auto;
+    max-height: 200px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.717);
 }
 
 .album h3 {
@@ -190,7 +189,12 @@ main {
     font-weight: 600;
     font-size: 16px;
     margin: 10px 0 0 0;
-    color: #2c3e50;
+    color: #2C3E50; /* Midnight Blue */
+}
+
+.album:hover {
+    transform: scale(1.2) rotate(0);
+    z-index: 500;
 }
 
 ul {
@@ -204,8 +208,12 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #e0e3e6;
+    color: #3498DB; /* Dodger Blue */
     font-weight: 600;
+}
+
+ul li a:hover {
+    color: #3498DB; /* Dodger Blue */
 }
 
 @media (max-width: 768px) {
@@ -238,17 +246,12 @@ ul li a {
     }
 }
 
-.album:hover {
-    transform: scale(1) rotate(0);
-    z-index: 1000;
-}
-
 .logo-img {
     border-radius: 40px;
 }
 
 footer {
-    background-color: #ceadca;
+    background-color: #4C5B5C; /* Outer Space */
     color: #fff;
     display: flex;
     align-items: center;
@@ -263,38 +266,76 @@ footer {
     margin-right: 10px; /* Add some spacing */
 }
 
-  /* unvisited link */
+/* unvisited link */
 a:link {
-    color: #2c3e50;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: #2c3e50;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-  }
-  
-  /* selected link */
-  a:active {
-    color: #2c3e50;
-  }
+    color: #3498DB; /* Dodger Blue */
+}
 
-  a:link {
+/* visited link */
+a:visited {
+    color: #3498DB; /* Dodger Blue */
+}
+
+/* mouse over link */
+a:hover {
+    color: #3498DB; /* Dodger Blue */
+}
+
+/* selected link */
+a:active {
+    color: #3498DB; /* Dodger Blue */
+}
+
+a:link {
     text-decoration: none;
-  }
-  
-  a:visited {
+}
+
+a:visited {
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: none;
-  }
-  
-  a:active {
+}
+
+a:active {
     text-decoration: none;
-  }
+}
+
+nav {
+    background-color: #4C5B5C; /* Outer Space */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+nav h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+.galle {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #c1daba; /* Pattens Blue */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.galle h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+    width: 100%;
+}
